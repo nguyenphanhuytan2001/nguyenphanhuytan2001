@@ -1,0 +1,224 @@
+/**
+ * AI Gemini Image Generator - Credit Page Styles
+ */
+
+.ai-gemini-credit-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+.credit-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.credit-header h2 {
+    font-size: 32px;
+    color: #1e293b;
+    margin: 0 0 12px;
+}
+
+.credit-header p {
+    font-size: 18px;
+    color: #64748b;
+    margin: 0 0 20px;
+}
+
+.current-balance {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.current-balance strong {
+    font-size: 24px;
+    margin: 0 8px;
+}
+
+/* Credit Packages */
+.credit-packages {
+    display: grid;
+    grid-template-columns: repeat(var(--columns, 4), 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.package-card {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: #6366f1;
+}
+
+.package-card.popular {
+    border-color: #6366f1;
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.2);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.package-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 16px;
+}
+
+.package-credits {
+    margin-bottom: 20px;
+}
+
+.credits-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: #6366f1;
+    display: block;
+    line-height: 1;
+}
+
+.credits-label {
+    font-size: 16px;
+    color: #64748b;
+}
+
+.package-price {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.package-rate {
+    font-size: 14px;
+    color: #94a3b8;
+    margin-bottom: 24px;
+}
+
+.btn-select-package {
+    width: 100%;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+.btn-select-package:hover:not(:disabled) {
+    transform: translateY(-2px);
+}
+
+.btn-select-package:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Payment Info */
+.payment-info {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 24px;
+}
+
+.payment-info h3 {
+    color: #1e293b;
+    margin: 0 0 20px;
+}
+
+.payment-info ol {
+    margin: 0;
+    padding-left: 24px;
+    color: #64748b;
+}
+
+.payment-info li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.payment-methods {
+    text-align: center;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+}
+
+.payment-methods h4 {
+    color: #1e293b;
+    margin: 0 0 8px;
+}
+
+.payment-methods p {
+    color: #64748b;
+    margin: 0;
+}
+
+/* Error State */
+.credit-error {
+    background: rgba(239, 68, 68, 0.1);
+    border: 2px solid #ef4444;
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+}
+
+.credit-error p {
+    color: #ef4444;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .credit-packages {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .credit-packages {
+        grid-template-columns: 1fr;
+    }
+    
+    .credit-header h2 {
+        font-size: 24px;
+    }
+    
+    .credits-number {
+        font-size: 36px;
+    }
+    
+    .package-price {
+        font-size: 24px;
+    }
+}
