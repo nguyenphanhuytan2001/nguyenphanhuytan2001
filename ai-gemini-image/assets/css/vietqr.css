@@ -1,0 +1,246 @@
+/**
+ * AI Gemini Image Generator - VietQR Payment Styles
+ */
+
+body.ai-gemini-payment-page {
+    background: #f8fafc;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+.vietqr-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.vietqr-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.vietqr-header h1 {
+    font-size: 28px;
+    color: #1e293b;
+    margin: 0 0 12px;
+}
+
+.vietqr-header p {
+    font-size: 16px;
+    color: #64748b;
+    margin: 0;
+}
+
+.vietqr-content {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Order Summary */
+.order-summary {
+    margin-bottom: 32px;
+}
+
+.order-summary h3 {
+    font-size: 18px;
+    color: #1e293b;
+    margin: 0 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.order-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail-row .label {
+    color: #64748b;
+}
+
+.detail-row .value {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.detail-row .value code {
+    background: #f1f5f9;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.detail-row.total {
+    padding-top: 12px;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 8px;
+}
+
+.detail-row.total .label,
+.detail-row.total .value {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.detail-row.total .value {
+    color: #6366f1;
+}
+
+/* QR Section */
+.qr-section {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.qr-code {
+    margin-bottom: 24px;
+}
+
+.qr-code img {
+    max-width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code .error {
+    color: #ef4444;
+    padding: 40px;
+    background: #fef2f2;
+    border-radius: 12px;
+}
+
+.bank-info {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+}
+
+.bank-info p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #1e293b;
+}
+
+.bank-info strong {
+    color: #64748b;
+    display: inline-block;
+    min-width: 80px;
+}
+
+/* Payment Status */
+.payment-status {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.status-waiting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px;
+    background: #fef3c7;
+    border-radius: 12px;
+    color: #92400e;
+}
+
+.status-waiting .spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(146, 64, 14, 0.3);
+    border-top-color: #92400e;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.status-success {
+    padding: 20px;
+    background: #dcfce7;
+    border-radius: 12px;
+    color: #166534;
+    font-weight: 600;
+}
+
+.status-timeout {
+    padding: 20px;
+    background: #fef2f2;
+    border-radius: 12px;
+    color: #991b1b;
+}
+
+/* Instructions */
+.payment-instructions {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.payment-instructions h4 {
+    color: #1e293b;
+    margin: 0 0 16px;
+}
+
+.payment-instructions ol {
+    margin: 0;
+    padding-left: 20px;
+    color: #475569;
+}
+
+.payment-instructions li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Footer */
+.vietqr-footer {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.btn-back {
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s;
+}
+
+.btn-back:hover {
+    color: #4f46e5;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .vietqr-container {
+        margin: 20px auto;
+    }
+    
+    .vietqr-content {
+        padding: 24px;
+    }
+    
+    .vietqr-header h1 {
+        font-size: 22px;
+    }
+    
+    .qr-code img {
+        max-width: 240px;
+    }
+}
